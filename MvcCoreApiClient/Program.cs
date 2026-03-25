@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<ServiceHospital>();
+builder.Services.AddTransient<ServiceEmpleados>();
 
 var app = builder.Build();
 
